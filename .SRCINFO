@@ -1,0 +1,13 @@
+pkgbase = plymouth-theme-pyannote
+	pkgdesc = Plymouth theme with Pyannote logo and annimation
+	pkgver = 1
+	pkgrel = 1
+	url = https://github.com/yourusername/plymouth-theme-pyannote
+	install = plymouth-theme-pyannote.install
+	arch = any
+	license = custom
+	depends = plymouth
+	source = theme
+	sha512sums = SKIP
+
+pkgname = plymouth-theme-pyannote

@@ -1,0 +1,16 @@
+post_install() {
+    echo ">>> Rebuilding Plymouth initrd image..."
+    plymouth-set-default-theme -R pyannote
+    echo ">>> Plymouth theme 'pyannote' has been installed and set as default."
+    echo ">>> Reboot to see the new boot splash."
+}
+
+post_upgrade() {
+    echo ">>> Rebuilding Plymouth initrd image..."
+    plymouth-set-default-theme -R pyannote
+}
+
+post_remove() {
+    echo ">>> Plymouth theme 'pyannote' has been removed."
+    echo ">>> Don't forget to set another theme as default."
+}
