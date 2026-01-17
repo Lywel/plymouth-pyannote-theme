@@ -9,11 +9,9 @@ url='https://github.com/yourusername/plymouth-theme-pyannote'
 license=('custom')
 depends=('plymouth')
 install="${pkgname}.install"
-source=('theme')
-sha512sums=('SKIP')
 
 package() {
-	cd "${srcdir}/theme"
+	cd "${startdir}/theme"
 	install -dm755 "${pkgdir}/usr/share/plymouth/themes/pyannote"
 	install -Dm644 *.png "${pkgdir}/usr/share/plymouth/themes/pyannote/"
 	install -Dm644 pyannote.plymouth "${pkgdir}/usr/share/plymouth/themes/pyannote/"
